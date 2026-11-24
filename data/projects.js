@@ -21,7 +21,7 @@ const projects = [
     tags: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma', 'Socket.io', 'Tailwind'],
     image: '/projects/liveboard.png',
     github: 'https://github.com/vesperia-xx/liveboard',
-    demo: 'https://liveboard-chi.vercel.app/',
+    demo: 'https://liveboard-chi.vercel.app/demo',
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const projects = [
     tags: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma', 'OpenAI', 'Tailwind'],
     image: '/projects/recall.png',
     github: 'https://github.com/vesperia-xx/AI-Knowledge-Workspace',
-    demo: 'https://ai-knowledge-workspace-one.vercel.app/',
+    demo: 'https://ai-knowledge-workspace-one.vercel.app/demo',
   },
 ];
 

@@ -1,0 +1,341 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ricardo Aguilera — Software Engineer · CV</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        color: #1e293b;
+        background: #ffffff;
+        font-size: 9.4pt;
+        line-height: 1.44;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .page {
+        padding: 12mm 13mm 10mm;
+      }
+
+      /* ---------- Header ---------- */
+      .header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 8mm;
+        padding-bottom: 5mm;
+        border-bottom: 2px solid #0f766e;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 23pt;
+        line-height: 1.05;
+        letter-spacing: 0.06em;
+        color: #0f172a;
+        font-weight: 700;
+      }
+
+      .role {
+        margin: 1.6mm 0 0;
+        font-size: 11pt;
+        font-weight: 700;
+        color: #0f766e;
+        white-space: nowrap;
+      }
+
+      .role-sub {
+        margin: 0.4mm 0 0;
+        font-size: 9.6pt;
+        font-weight: 600;
+        color: #475569;
+      }
+
+      .contact {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 8.4pt;
+        line-height: 1.6;
+        color: #475569;
+        text-align: right;
+      }
+
+      .contact strong {
+        color: #334155;
+        font-weight: 600;
+      }
+
+      .contact a {
+        color: #0f766e;
+        text-decoration: none;
+      }
+
+      /* ---------- Sections ---------- */
+      section {
+        margin-top: 5.6mm;
+      }
+
+      h2 {
+        display: flex;
+        align-items: center;
+        gap: 2.5mm;
+        margin: 0 0 2mm;
+        font-size: 8.6pt;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: #0f766e;
+      }
+
+      h2::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: #cbd5e1;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .profile {
+        text-align: justify;
+      }
+
+      /* ---------- Skills ---------- */
+      .skills {
+        display: grid;
+        grid-template-columns: 33mm 1fr;
+        gap: 1.4mm 5mm;
+        font-size: 8.9pt;
+      }
+
+      .skills dt {
+        font-weight: 700;
+        color: #0f172a;
+      }
+
+      .skills dd {
+        margin: 0;
+        color: #334155;
+      }
+
+      /* ---------- Experience ---------- */
+      .job + .job {
+        margin-top: 2.6mm;
+      }
+
+      .job-head {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 4mm;
+      }
+
+      .job-title {
+        margin: 0;
+        font-size: 9.8pt;
+        font-weight: 700;
+        color: #0f172a;
+      }
+
+      .job-period {
+        flex-shrink: 0;
+        font-size: 8.4pt;
+        font-weight: 600;
+        color: #0f766e;
+      }
+
+      .job-company {
+        margin: 0.3mm 0 1.2mm;
+        font-size: 8.9pt;
+        font-style: italic;
+        color: #64748b;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 4.2mm;
+      }
+
+      li {
+        padding-left: 0.6mm;
+      }
+
+      li + li {
+        margin-top: 0.6mm;
+      }
+
+      li::marker {
+        color: #14b8a6;
+      }
+
+      /* ---------- Education ---------- */
+      .edu-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2mm 6mm;
+      }
+
+      .edu-item h3 {
+        margin: 0;
+        font-size: 9.2pt;
+        font-weight: 700;
+        color: #0f172a;
+      }
+
+      .edu-item .year {
+        font-weight: 600;
+        color: #0f766e;
+      }
+
+      .edu-item p {
+        margin: 0.4mm 0 0;
+        font-size: 8.5pt;
+        color: #475569;
+      }
+
+      footer {
+        margin-top: 5mm;
+        padding-top: 2.4mm;
+        border-top: 1px solid #e2e8f0;
+        display: flex;
+        justify-content: space-between;
+        font-size: 7.6pt;
+        color: #94a3b8;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <div>
+          <h1>RICARDO AGUILERA</h1>
+          <p class="role">Software Engineer</p>
+          <p class="role-sub">Full-Stack &amp; AI Automation Specialist</p>
+        </div>
+        <ul class="contact">
+          <li><strong>Email:</strong> elrricardo_5@hotmail.com</li>
+          <li><strong>Phone:</strong> +58 412-3834495</li>
+          <li><strong>Location:</strong> Aragua, Venezuela</li>
+          <li><strong>English:</strong> B1/B2 (technical reading &amp; workplace communication)</li>
+          <li>
+            <a href="https://github.com/vesperia-xx">github.com/vesperia-xx</a> ·
+            <a href="https://www.linkedin.com/in/ricardo-aguilera-pro">linkedin.com/in/ricardo-aguilera-pro</a>
+          </li>
+        </ul>
+      </header>
+
+      <section>
+        <h2>Professional Profile</h2>
+        <p class="profile">
+          Results-driven Software Engineer with solid experience building modern web applications, scalable
+          architectures, and intelligent automation of operational workflows. Specialized in the
+          JavaScript/TypeScript ecosystem (React, Next.js, Node.js) and in orchestrating workflows with No-Code and
+          Low-Code tools (n8n, Make), REST APIs, and AI agents. Skilled at solving complex problems, optimizing
+          business processes, and saving hours of manual work.
+        </p>
+      </section>
+
+      <section>
+        <h2>Technical Skills &amp; Technologies</h2>
+        <dl class="skills">
+          <dt>Frontend &amp; UI</dt>
+          <dd>React, Next.js (SSR, SSG, Auth, Middleware), TypeScript, Context API, Tailwind CSS, Material UI (MUI), HTML5/CSS3.</dd>
+          <dt>Backend &amp; APIs</dt>
+          <dd>Node.js, Express, REST APIs, GraphQL, JWT Authentication, Next API Routes, Postman endpoint testing.</dd>
+          <dt>Automation &amp; AI Agents</dt>
+          <dd>n8n, Make, Zapier, Webhooks, LLM APIs (OpenAI, Gemini), OpenCode CLI, Prompt Engineering, Task Agents.</dd>
+          <dt>Databases, Cloud &amp; Tools</dt>
+          <dd>MongoDB, MySQL, Firestore, Docker Desktop, Git/GitHub, Cursor AI, Windsurf, Vercel, Render/Cloud.</dd>
+        </dl>
+      </section>
+
+      <section>
+        <h2>Professional Experience</h2>
+
+        <article class="job">
+          <div class="job-head">
+            <h3 class="job-title">Freelance Web Developer &amp; Automation Specialist</h3>
+            <span class="job-period">2023 – Present</span>
+          </div>
+          <p class="job-company">Upwork &amp; Direct Clients</p>
+          <ul>
+            <li>
+              Design and development of full-stack web applications tailored to international client requirements
+              using the MERN stack and Next.js.
+            </li>
+            <li>
+              Implementation of automations and workflow integrations with n8n, Make, and LLM APIs to optimize
+              operational processes.
+            </li>
+            <li>
+              Design and integration of relational (MySQL) and non-relational (MongoDB, Firestore) database schemas.
+            </li>
+            <li>
+              Secure authentication setup with JWT and NextAuth, role-based access control, and continuous
+              deployment to production.
+            </li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <div class="job-head">
+            <h3 class="job-title">IT Intern / IT Support</h3>
+            <span class="job-period">2022</span>
+          </div>
+          <p class="job-company">Frigorífico Luciano C.A.</p>
+          <ul>
+            <li>
+              Development and installation of a custom sales system, improving transactional processing times.
+            </li>
+            <li>
+              Preventive and corrective maintenance of the technology infrastructure, plus advisory on hardware
+              upgrades.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Education &amp; Certifications</h2>
+        <div class="edu-grid">
+          <div class="edu-item">
+            <h3>B.Sc. in Computer Engineering · <span class="year">2023</span></h3>
+            <p>Universidad Nacional Experimental Rómulo Gallegos (UNERG)</p>
+          </div>
+          <div class="edu-item">
+            <h3>OpenCode &amp; AI Agents in the Terminal · <span class="year">Specialization</span></h3>
+            <p>CLI-assisted development, multi-model management (open source) &amp; subagent creation</p>
+          </div>
+          <div class="edu-item">
+            <h3>Complementary Technical Certifications · <span class="year">Udemy &amp; self-taught</span></h3>
+            <p>React &amp; Next.js Development | Advanced Databases: MongoDB &amp; MySQL</p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <span>Ricardo Aguilera — Curriculum Vitae</span>
+        <span>Software Engineer</span>
+      </footer>
+    </main>
+  </body>
+</html>

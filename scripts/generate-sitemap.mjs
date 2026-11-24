@@ -1,5 +1,11 @@
 import { mkdirSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
+import nextEnv from '@next/env';
+
+// Este script corre antes de `next build`, así que tiene que cargar los .env
+// por su cuenta. Sin esto, NEXT_PUBLIC_SITE_URL de `.env.local` se ignoraría.
+const { loadEnvConfig } = nextEnv;
+loadEnvConfig(process.cwd(), process.env.NODE_ENV !== 'production');
 
 const publicDir = join(process.cwd(), 'public');
 const generatedFiles = ['sitemap.xml', 'robots.txt'];

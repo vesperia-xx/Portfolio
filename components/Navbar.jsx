@@ -17,19 +17,19 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur-md dark:border-slate-800/80 dark:bg-slate-950/80">
-      <nav className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between gap-4 px-6 sm:px-8">
+      <nav className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between gap-2 px-4 sm:gap-4 sm:px-8">
         <a
           href="#top"
           className="group flex shrink-0 items-center gap-2 rounded-lg py-1"
           aria-label={t.a11y.home}
         >
           <span className="h-2 w-2 rounded-full bg-brand-500 transition-transform group-hover:scale-125" />
-          <span className="font-display text-[15px] font-bold tracking-[0.14em] text-slate-900 dark:text-white">
+          <span className="font-display text-[13px] font-bold tracking-[0.12em] text-slate-900 sm:text-[15px] sm:tracking-[0.14em] dark:text-white">
             RICARDO<span className="text-brand-700 dark:text-brand-400">.DEV</span>
           </span>
         </a>
 
-        <div className="flex items-center gap-1.5 sm:gap-3">
+        <div className="flex items-center gap-1 sm:gap-3">
           <ul className="hidden items-center gap-1 lg:flex">
             {links.map((link) => (
               <li key={link.href}>
@@ -69,12 +69,32 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={t.nav.downloadCv}
-            className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-brand-700 px-3 py-2 text-sm font-semibold whitespace-nowrap text-white shadow-sm shadow-brand-700/25 transition-colors hover:bg-brand-800 sm:px-4"
+            className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-brand-700 px-2.5 py-2 text-sm font-semibold whitespace-nowrap text-white shadow-sm shadow-brand-700/25 transition-colors hover:bg-brand-800 sm:px-4"
           >
             <AiOutlineDownload aria-hidden className="text-base" />
             <span className="hidden sm:inline">{t.nav.downloadCv}</span>
           </a>
         </div>
+      </nav>
+
+      {/* En pantallas pequeñas los enlaces de la barra superior no caben;
+          esta fila los deja a un toque sin abrir un menú. */}
+      <nav
+        aria-label={t.a11y.sectionNavigation}
+        className="border-t border-slate-200/80 lg:hidden dark:border-slate-800/80"
+      >
+        <ul className="mx-auto flex w-full max-w-6xl gap-1 overflow-x-auto px-4 py-2 sm:px-8 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          {links.map((link) => (
+            <li key={link.href} className="shrink-0">
+              <a
+                href={link.href}
+                className="inline-flex min-h-8 items-center rounded-full px-3 text-xs font-medium whitespace-nowrap text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-slate-800/70 dark:hover:text-white"
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
       </nav>
     </header>
   );

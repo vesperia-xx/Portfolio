@@ -51,7 +51,7 @@ export default function LanguageSwitcher() {
             aria-label={name}
             aria-pressed={isActive}
             onClick={() => changeLocale(code)}
-            className={`rounded-full px-1.5 py-1 text-[11px] font-semibold transition-colors sm:px-2 ${
+            className={`min-h-8 min-w-8 rounded-full px-2 py-1 text-xs font-semibold transition-colors sm:min-h-9 sm:min-w-9 sm:px-2.5 ${
               isActive
                 ? 'bg-brand-700 text-white dark:bg-brand-500 dark:text-slate-950'
                 : 'text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white'

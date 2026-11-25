@@ -10,6 +10,7 @@ const es = {
   a11y: {
     skipToContent: 'Saltar al contenido',
     language: 'Idioma',
+    sectionNavigation: 'Navegación de secciones',
     home: 'Ricardo Aguilera, ir al inicio',
     github: 'GitHub de Ricardo Aguilera',
     linkedin: 'LinkedIn de Ricardo Aguilera',

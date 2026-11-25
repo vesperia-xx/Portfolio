@@ -10,6 +10,7 @@ const en = {
   a11y: {
     skipToContent: 'Skip to content',
     language: 'Language',
+    sectionNavigation: 'Section navigation',
     home: 'Ricardo Aguilera, go to top',
     github: 'Ricardo Aguilera on GitHub',
     linkedin: 'Ricardo Aguilera on LinkedIn',

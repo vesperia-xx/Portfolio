@@ -152,7 +152,7 @@ export default function Hero() {
             {stack.map(({ label, icon: Icon }) => (
               <li
                 key={label}
-                className="flex items-center gap-2 text-sm font-medium text-slate-500 transition-colors hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200"
+                className="flex items-center gap-2 text-sm font-medium text-slate-600 transition-colors hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200"
               >
                 <Icon aria-hidden className="text-lg" />
                 {label}
